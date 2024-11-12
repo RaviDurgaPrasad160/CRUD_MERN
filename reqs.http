@@ -1,0 +1,39 @@
+Get http://localhost:4000/user-api/getusers
+
+###
+GET http://localhost:4000/user-api/getuser/id
+
+###
+POST http://localhost:4000/user-api/create-user
+
+###
+PUT http://localhost:4000/user-api/update-user
+
+###
+DELETE http://localhost:4000/user-api/remove-user
+
+
+# to deal with product apis
+
+###
+GET http://localhost:4000/product-api/getproducts
+
+###
+GET http://localhost:4000/product-api/getproduct/id
+
+###
+POST http://localhost:4000/product-api/create-product
+Content-Type: application/json
+
+{
+    "productId":2,
+    "productName":"Mobile",
+    "brand":"Realme",
+    "price":35000
+}
+
+###
+PUT http://localhost:4000/product-api/update-product
+
+###
+DELETE http://localhost:4000/product-api/remove-product
