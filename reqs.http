@@ -19,21 +19,29 @@ DELETE http://localhost:4000/user-api/remove-user
 GET http://localhost:4000/product-api/getproducts
 
 ###
-GET http://localhost:4000/product-api/getproduct/id
+GET http://localhost:4000/product-api/getproduct/3
 
 ###
 POST http://localhost:4000/product-api/create-product
 Content-Type: application/json
 
 {
-    "productId":2,
-    "productName":"Mobile",
-    "brand":"Realme",
-    "price":35000
+    "productId":3,
+    "productName":"Laptop",
+    "brand":"Lenovo",
+    "price":55000
 }
 
 ###
 PUT http://localhost:4000/product-api/update-product
+Content-Type: application/json
+
+{
+    "productId":3,
+    "productName":"Laptop",
+    "brand":"HP",
+    "price":49999
+}
 
 ###
-DELETE http://localhost:4000/product-api/remove-product
+DELETE http://localhost:4000/product-api/remove-product/3
